@@ -4,6 +4,7 @@
 ## This is an object which stores the result 
 ## of a matrix inverse operation.
 makeCacheMatrix <- function(x = numeric()) {
+  # Added non square matrix checking just because.
   if(nrow(x) != ncol(x)) {
     stop("matrix x must be square")
   }
